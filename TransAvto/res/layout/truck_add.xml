@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/llBanner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:id="@+id/trTruckAddLocations"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/YellowGreen"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp" >
+
+                        <TextView
+                            android:layout_width="25dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0"
+                            android:gravity="center_horizontal"
+                            android:text="ИЗ:" />
+
+                        <ImageView
+                            android:id="@+id/ivTruckAddFlagFrom1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0"
+                            android:src="@drawable/flag_za" />
+
+                        <TextView
+                            android:id="@+id/tvTruckAddLocFrom1"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/edittext_default_bg"
+                            android:ems="10"
+                            android:gravity="center_vertical"
+                            android:paddingEnd="5dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:paddingStart="5dp" />
+
+                        <ImageView
+                            android:id="@+id/ivTruckAddLocFrom1Remove"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0"
+                            android:src="@drawable/trash" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:background="@color/White" >
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp" >
+
+                        <TextView
+                            android:layout_width="25dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_horizontal"
+                            android:text="В:" />
+
+                        <ImageView
+                            android:id="@+id/ivTruckAddFlagTo1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/flag_al" />
+
+                        <TextView
+                            android:id="@+id/tvTruckAddLocTo1"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/edittext_default_bg"
+                            android:ems="10"
+                            android:gravity="center_vertical"
+                            android:paddingEnd="5dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:paddingStart="5dp" />
+
+                        <ImageView
+                            android:id="@+id/ivTruckAddLocTo1Remove"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/trash" />
+                    </LinearLayout>
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/trTruckAddTexts"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1" >
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingTop="20dp" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:src="@drawable/calendar" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left|center_vertical"
+                            android:layout_weight="1"
+                            android:text="Даты" />
+
+                        <TextView
+                            android:id="@+id/tvTruckAddDates"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="2"
+                            android:gravity="center_horizontal"
+                            android:text="(Не задано)"
+                            android:textColor="@color/LightGrey" />
+
+                        <ImageView
+                            android:id="@+id/ivTruckAddDatesRemove"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/trash" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="25dp" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:src="@drawable/lorry" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left|center_vertical"
+                            android:layout_weight="1"
+                            android:text="Тип авто" />
+
+                        <TextView
+                            android:id="@+id/tvTruckAddTruck"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="2"
+                            android:gravity="center_horizontal"
+                            android:text="(Не задано)"
+                            android:textColor="@color/LightGrey" />
+
+                        <ImageView
+                            android:id="@+id/ivTruckAddTruckRemove"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/trash" />
+                    </TableRow>
+                    
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="25dp" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:src="@drawable/load_type" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left|center_vertical"
+                            android:layout_weight="1"
+                            android:text="Тип кузова" />
+
+                        <TextView
+                            android:id="@+id/tvTruckAddTruckType"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="2"
+                            android:gravity="center_horizontal"
+                            android:text="(Не задано)"
+                            android:textColor="@color/LightGrey" />
+
+                        <ImageView
+                            android:id="@+id/ivTruckAddTruckTypeRemove"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/trash" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="25dp" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:src="@drawable/pogruz" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_weight="1"
+                            android:text="Загрузка" />
+
+                        <TextView
+                            android:id="@+id/tvTruckAddLoadType"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="2"
+                            android:gravity="center_horizontal"
+                            android:text="(Не задано)"
+                            android:textColor="@color/LightGrey" />
+
+                        <ImageView
+                            android:id="@+id/ivTruckAddLoadTypeRemove"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/trash" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="25dp" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:src="@drawable/chat2" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:text="Описание" />
+
+                        <TextView
+                            android:id="@+id/tvTruckAddDescription"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="2"
+                            android:gravity="center_horizontal"
+                            android:text="(Не задано)"
+                            android:textColor="@color/LightGrey" />
+
+                        <ImageView
+                            android:id="@+id/ivTruckAddDescriptionRemove"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/trash" />
+                    </TableRow>
+                </TableLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="25dp" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/money" />
+
+                    <EditText
+                        android:id="@+id/etTruckAddPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="number" >
+
+                        <requestFocus />
+                    </EditText>
+
+                    <Spinner
+                        android:id="@+id/spnrTruckAddCurrency"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2" />
+
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/trTruckAddButtons"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="57dp"
+                        android:layout_weight="1" >
+
+                        <ImageButton
+                            android:id="@+id/ibTruckAddWeight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/button_main_bg"
+                            android:paddingBottom="15dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:src="@drawable/weight" />
+
+                        <TextView
+                            android:id="@+id/tvTruckAddWeight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignRight="@+id/ibTruckAddWeight"
+                            android:gravity="center_horizontal"
+                            android:text="не задано"
+                            android:textColor="@color/LightGrey"
+                            android:textSize="10dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="57dp"
+                        android:layout_weight="1" >
+
+                        <ImageButton
+                            android:id="@+id/ibTruckAddVolume"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/button_main_bg"
+                            android:paddingBottom="15dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:src="@drawable/volume" />
+
+                        <TextView
+                            android:id="@+id/tvTruckAddVolume"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignRight="@+id/ibTruckAddVolume"
+                            android:gravity="center_horizontal"
+                            android:text="не задано"
+                            android:textColor="@color/LightGrey"
+                            android:textSize="10dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="57dp"
+                        android:layout_weight="1" >
+
+                        <ImageButton
+                            android:id="@+id/ibTruckAddLength"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/button_main_bg"
+                            android:paddingBottom="15dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:src="@drawable/length" />
+
+                        <TextView
+                            android:id="@+id/tvTruckAddLength"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignRight="@+id/ibTruckAddLength"
+                            android:gravity="center_horizontal"
+                            android:text="не задано"
+                            android:textColor="@color/LightGrey"
+                            android:textSize="10dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="57dp"
+                        android:layout_weight="1" >
+
+                        <ImageButton
+                            android:id="@+id/ibTruckAddHeight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/button_main_bg"
+                            android:paddingBottom="15dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:src="@drawable/height" />
+
+                        <TextView
+                            android:id="@+id/tvTruckAddHeight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignRight="@+id/ibTruckAddHeight"
+                            android:gravity="center_horizontal"
+                            android:text="не задано"
+                            android:textColor="@color/LightGrey"
+                            android:textSize="10dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="57dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1" >
+
+                        <ImageButton
+                            android:id="@+id/ibTruckAddWidth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/button_main_bg"
+                            android:paddingBottom="15dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:src="@drawable/width" />
+
+                        <TextView
+                            android:id="@+id/tvTruckAddWidth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignRight="@+id/ibTruckAddWidth"
+                            android:gravity="center_horizontal"
+                            android:text="не задано"
+                            android:textColor="@color/LightGrey"
+                            android:textSize="10dp" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </TableRow>
+
+        </TableLayout>
+
+        <Button
+            android:id="@+id/btnTruckAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:text="Добавить машину" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,127 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TableRow
+            android:id="@+id/llDayOfWeek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Gainsboro" >
+
+            <TextView
+                android:id="@+id/tvTruckTypeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="@string/Monday"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/Black" />
+
+            <TextView
+                android:id="@+id/tvOneCargoPhone4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="@string/Tuesday"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/Black" />
+
+            <TextView
+                android:id="@+id/tvCargoTo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="@string/Wenesday"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/Black" />
+
+            <TextView
+                android:id="@+id/tvTruckType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="@string/Thursday"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/Black" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="@string/Friday"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/Black" />
+
+            <TextView
+                android:id="@+id/tvOneCargoFirmFbPos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="@string/Saturday"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/Crimson" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="@string/Sunday"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/Crimson" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/llWeek1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/llWeek2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/llWeek3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/llWeek4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/llWeek5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+        </TableRow>
+
+    </TableLayout>
+
+</merge>

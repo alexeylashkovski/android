@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="3dp"
+    android:paddingRight="3dp" >
+
+    <LinearLayout
+        android:id="@+id/llOneCargoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp" >
+
+                <ImageView
+                    android:id="@+id/ivOneCargoFrom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/flag_by" />
+
+                <TextView
+                    android:id="@+id/tvOneCargoFrom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="TextView" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingTop="10dp" >
+
+                <ImageView
+                    android:id="@+id/ivOneCargoTo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/flag_bi" />
+
+                <TextView
+                    android:id="@+id/tvOneCargoTo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="TextView" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingTop="10dp" >
+
+                <ImageView
+                    android:id="@+id/ivLocFrom1Remove"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:src="@drawable/calendar" />
+
+                <TextView
+                    android:id="@+id/tvOneCargoDates"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="TextView" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/trOneCargoTruck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingTop="10dp" >
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:src="@drawable/lorry" />
+
+                <TextView
+                    android:id="@+id/tvOneCargoTruck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="TextView" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/trOneCargoCargo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingTop="10dp" >
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:src="@drawable/box" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/tvOneCargoCargo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TextView" />
+
+                    <TextView
+                        android:id="@+id/tvOneCargoDim"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:text="TextView" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/trOneCargoPogruz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp" >
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:src="@drawable/pogruz" />
+
+                <TextView
+                    android:id="@+id/tvOneCargoPogruz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="TextView" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/trOneCargoDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp" >
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:src="@drawable/chat2" />
+
+                <TextView
+                    android:id="@+id/tvOneCargoDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="TextView" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/trOneCargoOplata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp" >
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:src="@drawable/money" />
+
+                <TextView
+                    android:id="@+id/tvOneCargoOplata"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="TextView" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/tvOneCargoActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/tvOneCargoDateOf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:text="TextView"
+            android:textColor="@color/DarkGray" />
+        
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/Gray" />
+
+        <TextView
+            android:id="@+id/tvOneCargoUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="TextView"
+            android:textColor="@color/DimGray" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" >
+
+            <TableRow
+                android:id="@+id/trOneCargoSkype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp" >
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/skype" />
+
+                <TextView
+                    android:id="@+id/tvOneCargoSkype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="TextView"
+                    android:textColor="@color/Blue" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/trOneCargoPhone1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp" >
+
+                <ImageView
+                    android:id="@+id/ivOneCargoPhone1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/telefon" />
+
+                <TextView
+                    android:id="@+id/tvOneCargoPhone1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="TextView"
+                    android:textColor="@color/Blue" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/trOneCargoPhone2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp" >
+
+                <ImageView
+                    android:id="@+id/ivOneCargoPhone2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/velcom" />
+
+                <TextView
+                    android:id="@+id/tvOneCargoPhone2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="TextView"
+                    android:textColor="@color/Blue" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/trOneCargoPhone3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp" >
+
+                <ImageView
+                    android:id="@+id/ivOneCargoPhone3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/mts" />
+
+                <TextView
+                    android:id="@+id/tvOneCargoPhone3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="TextView"
+                    android:textColor="@color/Blue" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/trOneCargoPhone4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp" >
+
+                <ImageView
+                    android:id="@+id/ivOneCargoPhone4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/life" />
+
+                <TextView
+                    android:id="@+id/tvOneCargoPhone4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="TextView"
+                    android:textColor="@color/Blue" />
+
+            </TableRow>
+        </TableLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/Gray" />
+
+        <LinearLayout
+            android:id="@+id/llOneCargoFirmName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" >
+
+            <ImageView
+                android:id="@+id/ivOneCargoFirmFlag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/flag_bh" />
+
+            <TextView
+                android:id="@+id/tvOneCargoFirmName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="TextView"
+                android:textColor="@color/Blue" />
+
+            <ImageView
+                android:id="@+id/ivOneCargoFirmRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/rating_0" />
+
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:id="@+id/trOneCargoFirmCargos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp" >
+
+                <TextView
+                    android:id="@+id/tvGroupName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Грузов в системе:"
+                    android:textColor="@color/Blue" />
+
+                <TextView
+                    android:id="@+id/tvOneCargoFirmCargos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="TextView" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/trOneCargoFirmTrucks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp" >
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Транспорт в системе:"
+                    android:textColor="@color/Blue" />
+
+                <TextView
+                    android:id="@+id/tvOneCargoFirmTrucks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="TextView" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/trOneCargoFirmFbPos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp" >
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Положительные отзывы:"
+                    android:textColor="@color/Blue" />
+
+                <TextView
+                    android:id="@+id/tvOneCargoFirmFbPos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="TextView" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/trOneCargoFirmFbNeg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp" >
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Отрицательные отзывы:"
+                    android:textColor="@color/Blue" />
+
+                <TextView
+                    android:id="@+id/tvOneCargoFirmFbNeg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="TextView" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/trOneCargoFirmNp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp" >
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Упоминаний на форуме &quot;НП&quot;:"
+                    android:textColor="@color/Blue" />
+
+                <TextView
+                    android:id="@+id/tvOneCargoFirmNp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="TextView" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/trOneCargoFirmPartners"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Фирма в партнерах:" />
+
+                <TextView
+                    android:id="@+id/tvOneCargoFirmPartners"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="TextView" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/trOneCargoFirmBlackList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp" >
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Фирма в &quot;черном списке&quot;:" />
+
+                <TextView
+                    android:id="@+id/tvOneCargoFirmBl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="TextView" />
+
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

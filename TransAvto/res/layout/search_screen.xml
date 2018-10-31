@@ -1,0 +1,927 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:id="@+id/tabCargoSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/White"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/llBanner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+                    </LinearLayout>
+
+                    <ScrollView
+                        android:id="@+id/scrollView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical" >
+
+                            <TableLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content" >
+
+                                <TableRow
+                                    android:id="@+id/tableRowLocations"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content" >
+
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="@color/YellowGreen"
+                                        android:orientation="vertical" >
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="40dp" >
+
+                                            <TextView
+                                                android:id="@+id/tvCargoFrom"
+                                                android:layout_width="25dp"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center_vertical"
+                                                android:layout_weight="0"
+                                                android:gravity="center_horizontal"
+                                                android:text="ИЗ:" />
+
+                                            <ImageView
+                                                android:id="@+id/ivFlagFrom1"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center_vertical"
+                                                android:layout_weight="0"
+                                                android:src="@drawable/flag_za" />
+
+                                            <TextView
+                                                android:id="@+id/tvLocationFrom1"
+                                                android:layout_width="0dp"
+                                                android:layout_height="fill_parent"
+                                                android:layout_gravity="center_vertical"
+                                                android:layout_marginBottom="2dp"
+                                                android:layout_marginLeft="5dp"
+                                                android:layout_marginRight="5dp"
+                                                android:layout_marginTop="2dp"
+                                                android:layout_weight="1"
+                                                android:background="@drawable/edittext_default_bg"
+                                                android:ems="10"
+                                                android:gravity="center_vertical"
+                                                android:paddingEnd="5dp"
+                                                android:paddingLeft="5dp"
+                                                android:paddingRight="5dp"
+                                                android:paddingStart="5dp" />
+
+                                            <ImageView
+                                                android:id="@+id/ivLocFrom1Remove"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center_vertical"
+                                                android:layout_weight="0"
+                                                android:src="@drawable/trash" />
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="5dp"
+                                            android:background="@color/White" >
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="40dp" >
+
+                                            <TextView
+                                                android:id="@+id/tvTo"
+                                                android:layout_width="25dp"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center_vertical"
+                                                android:gravity="center_horizontal"
+                                                android:text="В:" />
+
+                                            <ImageView
+                                                android:id="@+id/ivFlagTo1"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center_vertical"
+                                                android:src="@drawable/flag_al" />
+
+                                            <TextView
+                                                android:id="@+id/tvLocationTo1"
+                                                android:layout_width="0dp"
+                                                android:layout_height="fill_parent"
+                                                android:layout_gravity="center_vertical"
+                                                android:layout_marginBottom="2dp"
+                                                android:layout_marginLeft="5dp"
+                                                android:layout_marginRight="5dp"
+                                                android:layout_marginTop="2dp"
+                                                android:layout_weight="1"
+                                                android:background="@drawable/edittext_default_bg"
+                                                android:ems="10"
+                                                android:gravity="center_vertical"
+                                                android:paddingEnd="5dp"
+                                                android:paddingLeft="5dp"
+                                                android:paddingRight="5dp"
+                                                android:paddingStart="5dp" />
+
+                                            <ImageView
+                                                android:id="@+id/ivLocTo1Remove"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center_vertical"
+                                                android:src="@drawable/trash" />
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                </TableRow>
+
+                                <TableRow
+                                    android:id="@+id/tableRowTexts"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content" >
+
+                                    <TableLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1" >
+
+                                        <TableRow
+                                            android:id="@+id/tableRow1"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:paddingTop="20dp" >
+
+                                            <ImageView
+                                                android:id="@+id/ivOneCargoFrom"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginRight="10dp"
+                                                android:src="@drawable/calendar" />
+
+                                            <TextView
+                                                android:id="@+id/tvDatesText"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="left|center_vertical"
+                                                android:layout_weight="1"
+                                                android:text="Даты" />
+
+                                            <TextView
+                                                android:id="@+id/tvDates"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center_vertical"
+                                                android:layout_weight="2"
+                                                android:gravity="center_horizontal"
+                                                android:text="(Любые)"
+                                                android:textColor="@color/LightGrey" />
+
+                                            <ImageView
+                                                android:id="@+id/ivDatesRemove"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:src="@drawable/trash" />
+                                        </TableRow>
+
+                                        <TableRow
+                                            android:id="@+id/tableRow2"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:paddingTop="25dp" >
+
+                                            <ImageView
+                                                android:id="@+id/ivCargoFlagTo"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="left"
+                                                android:src="@drawable/lorry" />
+
+                                            <TextView
+                                                android:id="@+id/textView10"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="left|center_vertical"
+                                                android:layout_weight="1"
+                                                android:text="Тип кузова" />
+
+                                            <TextView
+                                                android:id="@+id/tvTruckType"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center_vertical"
+                                                android:layout_weight="2"
+                                                android:gravity="center_horizontal"
+                                                android:text="(Любые)"
+                                                android:textColor="@color/LightGrey" />
+
+                                            <ImageView
+                                                android:id="@+id/ivTruckTypeRemove"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:src="@drawable/trash" />
+                                        </TableRow>
+
+                                        <TableRow
+                                            android:id="@+id/tableRow5"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:paddingTop="25dp" >
+
+                                            <ImageView
+                                                android:id="@+id/ivCargoFlagFrom"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="left"
+                                                android:src="@drawable/pogruz" />
+
+                                            <TextView
+                                                android:id="@+id/textView8"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="left"
+                                                android:layout_weight="1"
+                                                android:text="Загрузка" />
+
+                                            <TextView
+                                                android:id="@+id/tvLoadType"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center_vertical"
+                                                android:layout_weight="2"
+                                                android:gravity="center_horizontal"
+                                                android:text="(Любые)"
+                                                android:textColor="@color/LightGrey" />
+
+                                            <ImageView
+                                                android:id="@+id/ivLoadTypeRemove"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:src="@drawable/trash" />
+                                        </TableRow>
+                                    </TableLayout>
+                                </TableRow>
+
+                                <TableRow
+                                    android:id="@+id/tableRowButtons"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="30dp" >
+
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal" >
+
+                                        <RelativeLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="57dp"
+                                            android:layout_weight="1" >
+
+                                            <ImageButton
+                                                android:id="@+id/ibWeight"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginRight="20dp"
+                                                android:background="@drawable/button_main_bg"
+                                                android:paddingBottom="15dp"
+                                                android:paddingLeft="5dp"
+                                                android:paddingRight="5dp"
+                                                android:src="@drawable/weight" />
+
+                                            <TextView
+                                                android:id="@+id/tvWeight"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentBottom="true"
+                                                android:layout_alignParentLeft="true"
+                                                android:layout_alignRight="@+id/ibWeight"
+                                                android:gravity="center_horizontal"
+                                                android:text="Любой"
+                                                android:textColor="@color/LightGrey"
+                                                android:textSize="10dp" />
+                                        </RelativeLayout>
+
+                                        <RelativeLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="57dp"
+                                            android:layout_weight="1" >
+
+                                            <ImageButton
+                                                android:id="@+id/ibVolume"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginRight="20dp"
+                                                android:background="@drawable/button_main_bg"
+                                                android:paddingBottom="15dp"
+                                                android:paddingLeft="5dp"
+                                                android:paddingRight="5dp"
+                                                android:src="@drawable/volume" />
+
+                                            <TextView
+                                                android:id="@+id/tvVolume"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentBottom="true"
+                                                android:layout_alignParentLeft="true"
+                                                android:layout_alignRight="@+id/ibVolume"
+                                                android:gravity="center_horizontal"
+                                                android:text="Любой"
+                                                android:textColor="@color/LightGrey"
+                                                android:textSize="10dp" />
+                                        </RelativeLayout>
+
+                                        <RelativeLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="57dp"
+                                            android:layout_weight="1" >
+
+                                            <ImageButton
+                                                android:id="@+id/ibLength"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginRight="20dp"
+                                                android:background="@drawable/button_main_bg"
+                                                android:paddingBottom="15dp"
+                                                android:paddingLeft="5dp"
+                                                android:paddingRight="5dp"
+                                                android:src="@drawable/length" />
+
+                                            <TextView
+                                                android:id="@+id/tvLength"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentBottom="true"
+                                                android:layout_alignParentLeft="true"
+                                                android:layout_alignRight="@+id/ibLength"
+                                                android:gravity="center_horizontal"
+                                                android:text="Любой"
+                                                android:textColor="@color/LightGrey"
+                                                android:textSize="10dp" />
+                                        </RelativeLayout>
+
+                                        <RelativeLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="57dp"
+                                            android:layout_weight="1" >
+
+                                            <ImageButton
+                                                android:id="@+id/ibHeight"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginRight="20dp"
+                                                android:background="@drawable/button_main_bg"
+                                                android:paddingBottom="15dp"
+                                                android:paddingLeft="5dp"
+                                                android:paddingRight="5dp"
+                                                android:src="@drawable/height" />
+
+                                            <TextView
+                                                android:id="@+id/tvHeight"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentBottom="true"
+                                                android:layout_alignParentLeft="true"
+                                                android:layout_alignRight="@+id/ibHeight"
+                                                android:gravity="center_horizontal"
+                                                android:text="Любой"
+                                                android:textColor="@color/LightGrey"
+                                                android:textSize="10dp" />
+                                        </RelativeLayout>
+
+                                        <RelativeLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="57dp"
+                                            android:layout_gravity="center_horizontal"
+                                            android:layout_weight="1" >
+
+                                            <ImageButton
+                                                android:id="@+id/ibWidth"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginRight="20dp"
+                                                android:background="@drawable/button_main_bg"
+                                                android:paddingBottom="15dp"
+                                                android:paddingLeft="5dp"
+                                                android:paddingRight="5dp"
+                                                android:src="@drawable/width" />
+
+                                            <TextView
+                                                android:id="@+id/tvWidth"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentBottom="true"
+                                                android:layout_alignParentLeft="true"
+                                                android:layout_alignRight="@+id/ibWidth"
+                                                android:gravity="center_horizontal"
+                                                android:text="Любой"
+                                                android:textColor="@color/LightGrey"
+                                                android:textSize="10dp" />
+                                        </RelativeLayout>
+                                    </LinearLayout>
+                                </TableRow>
+                            </TableLayout>
+
+                            <Button
+                                android:id="@+id/btnSearch"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="20dp"
+                                android:paddingLeft="40dp"
+                                android:paddingRight="40dp"
+                                android:text="Искать грузы" />
+
+                        </LinearLayout>
+                    </ScrollView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tabTruckSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/White"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/llBannerTruck"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                    </LinearLayout>
+
+                    <ScrollView
+                        android:id="@+id/scrollView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical" >
+
+                            <TableLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content" >
+
+                                <TableRow
+                                    android:id="@+id/tableRowLocationsTruck"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content" >
+
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="@color/YellowGreen"
+                                        android:orientation="vertical" >
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="40dp" >
+
+                                            <TextView
+                                                android:id="@+id/tvTruckFrom"
+                                                android:layout_width="25dp"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center_vertical"
+                                                android:layout_weight="0"
+                                                android:gravity="center_horizontal"
+                                                android:text="ИЗ:" />
+
+                                            <ImageView
+                                                android:id="@+id/ivFlagFrom1Truck"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center_vertical"
+                                                android:layout_weight="0"
+                                                android:src="@drawable/flag_za" />
+
+                                            <TextView
+                                                android:id="@+id/tvLocationFrom1Truck"
+                                                android:layout_width="0dp"
+                                                android:layout_height="fill_parent"
+                                                android:layout_gravity="center_vertical"
+                                                android:layout_marginBottom="2dp"
+                                                android:layout_marginLeft="5dp"
+                                                android:layout_marginRight="5dp"
+                                                android:layout_marginTop="2dp"
+                                                android:layout_weight="1"
+                                                android:background="@drawable/edittext_default_bg"
+                                                android:ems="10"
+                                                android:gravity="center_vertical"
+                                                android:paddingEnd="5dp"
+                                                android:paddingLeft="5dp"
+                                                android:paddingRight="5dp"
+                                                android:paddingStart="5dp" />
+
+                                            <ImageView
+                                                android:id="@+id/ivLocFrom1RemoveTruck"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center_vertical"
+                                                android:layout_weight="0"
+                                                android:src="@drawable/trash" />
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="5dp"
+                                            android:background="@color/White" >
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="40dp" >
+
+                                            <TextView
+                                                android:id="@+id/tvToTruck"
+                                                android:layout_width="25dp"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center_vertical"
+                                                android:gravity="center_horizontal"
+                                                android:text="В:" />
+
+                                            <ImageView
+                                                android:id="@+id/ivFlagTo1Truck"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center_vertical"
+                                                android:src="@drawable/flag_al" />
+
+                                            <TextView
+                                                android:id="@+id/tvLocationTo1Truck"
+                                                android:layout_width="0dp"
+                                                android:layout_height="fill_parent"
+                                                android:layout_gravity="center_vertical"
+                                                android:layout_marginBottom="2dp"
+                                                android:layout_marginLeft="5dp"
+                                                android:layout_marginRight="5dp"
+                                                android:layout_marginTop="2dp"
+                                                android:layout_weight="1"
+                                                android:background="@drawable/edittext_default_bg"
+                                                android:ems="10"
+                                                android:gravity="center_vertical"
+                                                android:paddingEnd="5dp"
+                                                android:paddingLeft="5dp"
+                                                android:paddingRight="5dp"
+                                                android:paddingStart="5dp" />
+
+                                            <ImageView
+                                                android:id="@+id/ivLocTo1RemoveTruck"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center_vertical"
+                                                android:src="@drawable/trash" />
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                </TableRow>
+
+                                <TableRow
+                                    android:id="@+id/tableRowTextsTruck"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content" >
+
+                                    <TableLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1" >
+
+                                        <TableRow
+                                            android:id="@+id/tableRow1Truck"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:paddingTop="20dp" >
+
+                                            <ImageView
+                                                android:id="@+id/ivOneTruckFrom"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginRight="10dp"
+                                                android:src="@drawable/calendar" />
+
+                                            <TextView
+                                                android:id="@+id/tvDatesTextTruck"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="left|center_vertical"
+                                                android:layout_weight="1"
+                                                android:text="Даты" />
+
+                                            <TextView
+                                                android:id="@+id/tvDatesTruck"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center_vertical"
+                                                android:layout_weight="2"
+                                                android:gravity="center_horizontal"
+                                                android:text="(Любые)"
+                                                android:textColor="@color/LightGrey" />
+
+                                            <ImageView
+                                                android:id="@+id/ivDatesRemoveTruck"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:src="@drawable/trash" />
+                                        </TableRow>
+
+                                        <TableRow
+                                            android:id="@+id/trTruckTypeTruck"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:paddingTop="25dp" >
+
+                                            <ImageView
+                                                android:id="@+id/imageView7"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="left"
+                                                android:src="@drawable/lorry" />
+
+                                            <TextView
+                                                android:id="@+id/textView6"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="left|center_vertical"
+                                                android:layout_weight="1"
+                                                android:text="Тип кузова" />
+
+                                            <TextView
+                                                android:id="@+id/tvTruckTypeTruck"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center_vertical"
+                                                android:layout_weight="2"
+                                                android:gravity="center_horizontal"
+                                                android:text="(Любые)"
+                                                android:textColor="@color/LightGrey" />
+
+                                            <ImageView
+                                                android:id="@+id/ivTruckTypeRemoveTruck"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:src="@drawable/trash" />
+                                        </TableRow>
+
+                                        <TableRow
+                                            android:id="@+id/tableRow6"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:paddingTop="25dp" >
+
+                                            <ImageView
+                                                android:id="@+id/imageView2"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="left"
+                                                android:src="@drawable/pogruz" />
+
+                                            <TextView
+                                                android:id="@+id/textView4"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="left"
+                                                android:layout_weight="1"
+                                                android:text="Загрузка" />
+
+                                            <TextView
+                                                android:id="@+id/tvLoadTypeTruck"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center_vertical"
+                                                android:layout_weight="2"
+                                                android:gravity="center_horizontal"
+                                                android:text="(Любые)"
+                                                android:textColor="@color/LightGrey" />
+
+                                            <ImageView
+                                                android:id="@+id/ivLoadTypeRemoveTruck"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:src="@drawable/trash" />
+                                        </TableRow>
+                                    </TableLayout>
+                                </TableRow>
+
+                                <TableRow
+                                    android:id="@+id/tableRowButtonsTruck"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="30dp" >
+
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal" >
+
+                                        <RelativeLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="57dp"
+                                            android:layout_weight="1" >
+
+                                            <ImageButton
+                                                android:id="@+id/ibWeightTruck"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginRight="20dp"
+                                                android:background="@drawable/button_main_bg"
+                                                android:paddingBottom="15dp"
+                                                android:paddingLeft="5dp"
+                                                android:paddingRight="5dp"
+                                                android:src="@drawable/weight" />
+
+                                            <TextView
+                                                android:id="@+id/tvWeightTruck"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentBottom="true"
+                                                android:layout_alignParentLeft="true"
+                                                android:layout_alignRight="@+id/ibWeightTruck"
+                                                android:gravity="center_horizontal"
+                                                android:text="Любой"
+                                                android:textColor="@color/LightGrey"
+                                                android:textSize="10dp" />
+                                        </RelativeLayout>
+
+                                        <RelativeLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="57dp"
+                                            android:layout_weight="1" >
+
+                                            <ImageButton
+                                                android:id="@+id/ibVolumeTruck"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginRight="20dp"
+                                                android:background="@drawable/button_main_bg"
+                                                android:paddingBottom="15dp"
+                                                android:paddingLeft="5dp"
+                                                android:paddingRight="5dp"
+                                                android:src="@drawable/volume" />
+
+                                            <TextView
+                                                android:id="@+id/tvVolumeTruck"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentBottom="true"
+                                                android:layout_alignParentLeft="true"
+                                                android:layout_alignRight="@+id/ibVolumeTruck"
+                                                android:gravity="center_horizontal"
+                                                android:text="Любой"
+                                                android:textColor="@color/LightGrey"
+                                                android:textSize="10dp" />
+                                        </RelativeLayout>
+
+                                        <RelativeLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="57dp"
+                                            android:layout_weight="1" >
+
+                                            <ImageButton
+                                                android:id="@+id/ibLengthTruck"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginRight="20dp"
+                                                android:background="@drawable/button_main_bg"
+                                                android:paddingBottom="15dp"
+                                                android:paddingLeft="5dp"
+                                                android:paddingRight="5dp"
+                                                android:src="@drawable/length" />
+
+                                            <TextView
+                                                android:id="@+id/tvLengthTruck"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentBottom="true"
+                                                android:layout_alignParentLeft="true"
+                                                android:layout_alignRight="@+id/ibLengthTruck"
+                                                android:gravity="center_horizontal"
+                                                android:text="Любой"
+                                                android:textColor="@color/LightGrey"
+                                                android:textSize="10dp" />
+                                        </RelativeLayout>
+
+                                        <RelativeLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="57dp"
+                                            android:layout_weight="1" >
+
+                                            <ImageButton
+                                                android:id="@+id/ibHeightTruck"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginRight="20dp"
+                                                android:background="@drawable/button_main_bg"
+                                                android:paddingBottom="15dp"
+                                                android:paddingLeft="5dp"
+                                                android:paddingRight="5dp"
+                                                android:src="@drawable/height" />
+
+                                            <TextView
+                                                android:id="@+id/tvHeightTruck"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentBottom="true"
+                                                android:layout_alignParentLeft="true"
+                                                android:layout_alignRight="@+id/ibHeightTruck"
+                                                android:gravity="center_horizontal"
+                                                android:text="Любой"
+                                                android:textColor="@color/LightGrey"
+                                                android:textSize="10dp" />
+                                        </RelativeLayout>
+
+                                        <RelativeLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="57dp"
+                                            android:layout_gravity="center_horizontal"
+                                            android:layout_weight="1" >
+
+                                            <ImageButton
+                                                android:id="@+id/ibWidthTruck"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginRight="20dp"
+                                                android:background="@drawable/button_main_bg"
+                                                android:paddingBottom="15dp"
+                                                android:paddingLeft="5dp"
+                                                android:paddingRight="5dp"
+                                                android:src="@drawable/width" />
+
+                                            <TextView
+                                                android:id="@+id/tvWidthTruck"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentBottom="true"
+                                                android:layout_alignParentLeft="true"
+                                                android:layout_alignRight="@+id/ibWidthTruck"
+                                                android:gravity="center_horizontal"
+                                                android:text="Любой"
+                                                android:textColor="@color/LightGrey"
+                                                android:textSize="10dp" />
+                                        </RelativeLayout>
+                                    </LinearLayout>
+                                </TableRow>
+                            </TableLayout>
+
+                            <Button
+                                android:id="@+id/btnSearchTruck"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="20dp"
+                                android:paddingLeft="40dp"
+                                android:paddingRight="40dp"
+                                android:text="Искать транспорт" />
+
+                        </LinearLayout>
+                    </ScrollView>
+
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>

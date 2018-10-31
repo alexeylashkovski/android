@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="by.transavto.transavto"
+    android:versionCode="7"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.LOCATION_HARDWARE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <application       
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+        
+        
+        <activity
+            android:name="ActivityLogin"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="ActivityMainScreen" >
+        </activity>
+        <activity android:name="ActivityChat" >
+        </activity>
+        <activity
+            android:name="ActivitySearch"
+            android:theme="@style/SampleTheme.Light" >
+        </activity>
+        <activity android:name="ActivityChooseLocation" >
+        </activity>
+        <activity
+            android:name="DialogDatePicker"
+            android:label="@string/DatePickerName"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="ActivityDbUpdate"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity android:name="ActivityCargoSearch"></activity>
+        <activity android:name="ActivityCargoView"></activity>
+        <activity android:name="ActivityTruckSearch"></activity>
+        <activity android:name="ActivityTruckView"></activity>
+        <activity android:name="ActivityCargoAdd"
+                  android:theme="@style/SampleTheme.Light" >
+        </activity>
+        <activity android:name="ActivityTruckAdd"
+            	  android:theme="@style/SampleTheme.Light" >
+        </activity>
+        <activity android:name="ActivityMyCargos"></activity>
+        <activity android:name="ActivityMyTrucks"></activity>
+        <activity android:name="ActivityFirmSearch"></activity>
+        <activity android:name="ActivityFirmView"></activity>
+        <activity android:name="com.google.android.gms.ads.AdActivity"
+             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+        <activity android:name="DialogVote4Us"
+            android:label="@string/Vote4UsName"
+            android:theme="@android:style/Theme.Dialog" >
+            
+		</activity>
+    </application>
+
+</manifest>

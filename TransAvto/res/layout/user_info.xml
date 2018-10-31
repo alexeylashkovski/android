@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvUserUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/DimGray" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" >
+
+        <TableRow
+            android:id="@+id/trUserSkype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp" >
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/skype" />
+
+            <TextView
+                android:id="@+id/tvUserSkype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="TextView"
+                android:textColor="@color/Blue" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/trUserPhone1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp" >
+
+            <ImageView
+                android:id="@+id/ivUserPhone1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/telefon" />
+
+            <TextView
+                android:id="@+id/tvUserPhone1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="TextView"
+                android:textColor="@color/Blue" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/trUserPhone2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp" >
+
+            <ImageView
+                android:id="@+id/ivUserPhone2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/velcom" />
+
+            <TextView
+                android:id="@+id/tvUserPhone2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="TextView"
+                android:textColor="@color/Blue" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/trUserPhone3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp" >
+
+            <ImageView
+                android:id="@+id/ivUserPhone3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/mts" />
+
+            <TextView
+                android:id="@+id/tvUserPhone3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="TextView"
+                android:textColor="@color/Blue" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/trUserPhone4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp" >
+
+            <ImageView
+                android:id="@+id/ivUserPhone4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/life" />
+
+            <TextView
+                android:id="@+id/tvUserPhone4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="TextView"
+                android:textColor="@color/Blue" />
+        </TableRow>
+    </TableLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/Gray" />
+
+</LinearLayout>

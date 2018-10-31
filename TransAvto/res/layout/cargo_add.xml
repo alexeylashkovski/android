@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/llBanner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:id="@+id/trCargoAddLocations"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/YellowGreen"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp" >
+
+                        <TextView
+                            android:layout_width="25dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0"
+                            android:gravity="center_horizontal"
+                            android:text="ИЗ:" />
+
+                        <ImageView
+                            android:id="@+id/ivCargoAddFlagFrom1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0"
+                            android:src="@drawable/flag_za" />
+
+                        <TextView
+                            android:id="@+id/tvCargoAddLocFrom1"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/edittext_default_bg"
+                            android:ems="10"
+                            android:gravity="center_vertical"
+                            android:paddingEnd="5dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:paddingStart="5dp" />
+
+                        <ImageView
+                            android:id="@+id/ivCargoAddLocFrom1Remove"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0"
+                            android:src="@drawable/trash" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:background="@color/White" >
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp" >
+
+                        <TextView
+                            android:layout_width="25dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_horizontal"
+                            android:text="В:" />
+
+                        <ImageView
+                            android:id="@+id/ivCargoAddFlagTo1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/flag_al" />
+
+                        <TextView
+                            android:id="@+id/tvCargoAddLocTo1"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/edittext_default_bg"
+                            android:ems="10"
+                            android:gravity="center_vertical"
+                            android:paddingEnd="5dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:paddingStart="5dp" />
+
+                        <ImageView
+                            android:id="@+id/ivCargoAddLocTo1Remove"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/trash" />
+                    </LinearLayout>
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/trCargoAddTexts"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1" >
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingTop="20dp" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:src="@drawable/calendar" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left|center_vertical"
+                            android:layout_weight="1"
+                            android:text="Даты" />
+
+                        <TextView
+                            android:id="@+id/tvCargoAddDates"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="2"
+                            android:gravity="center_horizontal"
+                            android:text="(Не задано)"
+                            android:textColor="@color/LightGrey" />
+
+                        <ImageView
+                            android:id="@+id/ivCargoAddDatesRemove"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/trash" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="25dp" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:src="@drawable/load_type" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left|center_vertical"
+                            android:layout_weight="1"
+                            android:text="Тип кузова" />
+
+                        <TextView
+                            android:id="@+id/tvCargoAddTruckType"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="2"
+                            android:gravity="center_horizontal"
+                            android:text="(Не задано)"
+                            android:textColor="@color/LightGrey" />
+
+                        <ImageView
+                            android:id="@+id/ivCargoAddTruckTypeRemove"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/trash" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="25dp" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:src="@drawable/box" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:text="Груз" />
+
+                        <TextView
+                            android:id="@+id/tvCargoAddCargoType"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="2"
+                            android:gravity="center_horizontal"
+                            android:text="(Не задано)"
+                            android:textColor="@color/LightGrey" />
+
+                        <ImageView
+                            android:id="@+id/ivCargoAddCargoTypeRemove"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/trash" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="25dp" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:src="@drawable/pogruz" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_weight="1"
+                            android:text="Загрузка" />
+
+                        <TextView
+                            android:id="@+id/tvCargoAddLoadType"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="2"
+                            android:gravity="center_horizontal"
+                            android:text="(Не задано)"
+                            android:textColor="@color/LightGrey" />
+
+                        <ImageView
+                            android:id="@+id/ivCargoAddLoadTypeRemove"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/trash" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="25dp" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:src="@drawable/chat2" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:text="Описание" />
+
+                        <TextView
+                            android:id="@+id/tvCargoAddDescription"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="2"
+                            android:gravity="center_horizontal"
+                            android:text="(Не задано)"
+                            android:textColor="@color/LightGrey" />
+
+                        <ImageView
+                            android:id="@+id/ivCargoAddDescriptionRemove"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/trash" />
+                    </TableRow>
+                </TableLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="25dp" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/money" />
+
+                    <EditText
+                        android:id="@+id/etCargoAddPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="number" >
+
+                        <requestFocus />
+                    </EditText>
+
+                    <Spinner
+                        android:id="@+id/spnrCargoAddCurrency"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2" />
+
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/trCargoAddButtons"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="57dp"
+                        android:layout_weight="1" >
+
+                        <ImageButton
+                            android:id="@+id/ibCargoAddWeight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/button_main_bg"
+                            android:paddingBottom="15dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:src="@drawable/weight" />
+
+                        <TextView
+                            android:id="@+id/tvCargoAddWeight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignRight="@+id/ibCargoAddWeight"
+                            android:gravity="center_horizontal"
+                            android:text="не задано"
+                            android:textColor="@color/LightGrey"
+                            android:textSize="10dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="57dp"
+                        android:layout_weight="1" >
+
+                        <ImageButton
+                            android:id="@+id/ibCargoAddVolume"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/button_main_bg"
+                            android:paddingBottom="15dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:src="@drawable/volume" />
+
+                        <TextView
+                            android:id="@+id/tvCargoAddVolume"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignRight="@+id/ibCargoAddVolume"
+                            android:gravity="center_horizontal"
+                            android:text="не задано"
+                            android:textColor="@color/LightGrey"
+                            android:textSize="10dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="57dp"
+                        android:layout_weight="1" >
+
+                        <ImageButton
+                            android:id="@+id/ibCargoAddLength"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/button_main_bg"
+                            android:paddingBottom="15dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:src="@drawable/length" />
+
+                        <TextView
+                            android:id="@+id/tvCargoAddLength"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignRight="@+id/ibCargoAddLength"
+                            android:gravity="center_horizontal"
+                            android:text="не задано"
+                            android:textColor="@color/LightGrey"
+                            android:textSize="10dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="57dp"
+                        android:layout_weight="1" >
+
+                        <ImageButton
+                            android:id="@+id/ibCargoAddHeight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/button_main_bg"
+                            android:paddingBottom="15dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:src="@drawable/height" />
+
+                        <TextView
+                            android:id="@+id/tvCargoAddHeight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignRight="@+id/ibCargoAddHeight"
+                            android:gravity="center_horizontal"
+                            android:text="не задано"
+                            android:textColor="@color/LightGrey"
+                            android:textSize="10dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="57dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1" >
+
+                        <ImageButton
+                            android:id="@+id/ibCargoAddWidth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/button_main_bg"
+                            android:paddingBottom="15dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:src="@drawable/width" />
+
+                        <TextView
+                            android:id="@+id/tvCargoAddWidth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignRight="@+id/ibCargoAddWidth"
+                            android:gravity="center_horizontal"
+                            android:text="не задано"
+                            android:textColor="@color/LightGrey"
+                            android:textSize="10dp" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </TableRow>
+
+        </TableLayout>
+
+        <Button
+            android:id="@+id/btnCargoAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:text="Добавить груз" />
+    </LinearLayout>
+
+</ScrollView>

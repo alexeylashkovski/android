@@ -1,0 +1,20 @@
+<resources>
+
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+    
+    </style>
+
+    <style name="AppTheme" parent="android:Theme.Light">
+
+    </style>
+
+    <style name="SampleTheme" parent="android:Theme">
+        <item name="numberPickerStyle">@style/NPWidget.Holo.NumberPicker</item>
+    </style>
+
+    <style name="SampleTheme.Light" parent="android:Theme.Light">
+        <item name="numberPickerStyle">@style/NPWidget.Holo.Light.NumberPicker</item>
+    </style>
+
+
+</resources>

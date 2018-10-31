@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/LightGrey"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/ivLogo1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/logo5" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+
+                android:background="@color/Gray" />
+
+        </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvAds"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/llCargoSearchInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tvCargoSearchInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/button_main_bg"
+            android:gravity="center_horizontal|center_vertical"
+            android:paddingBottom="40dp"
+            android:paddingTop="40dp"
+            android:text="Заявок удовлетворяющих условиям фильтра\nне найдено."
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </LinearLayout>
+ 
+                <ProgressBar
+                    android:id="@+id/pbAdsSpinner"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal" />
+    
+</LinearLayout>
